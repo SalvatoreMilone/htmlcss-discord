@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    height: 80px;
+    background-color: #255EE9;
+    width: 100%;
+    line-height: 80px;
+}
+
+nav{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+}
+nav ul li a{
+    color:white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul{
+    display: inline-block;
+}
+
+
+#logo{
+    height: 100%;
+    margin-right: 10%;
+    position: relative;
+    top: 15%;
+}
+
+#accedi{
+    margin-left: 10%;
+}
+
+.latpadding{
+    padding: 0 15%;
+}
+.contentbox{
+    width: 100%;
+    min-height: 200px;
+    text-align: center;
+}
+
+.contentbox{
+    padding-top: 100px;
+}
+.contentbox h2{
+    margin-bottom: 60px;
+}
+.contentbox p{
+    margin-bottom: 60px;
+}
+
+.c2 .img{
+    width: 50%;
+    display: inline-block;
+}
+.sectext{
+    width: 30%;
+    display: inline-block;
+    margin:0 50px;
+    line-height: 28px;
+}
+
+.sectext h2{
+    margin-bottom: 40px;
+}
+/* -------------btn----------------- */
+
+.btn{
+    display: inline;
+    background-color: white;
+    color: black;
+    padding: 15px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    margin: 0 20px;
+    transition: .5s;
+}
+
+.btn:hover{
+    color: blue;
+    text-decoration: none;
+    box-shadow: rgba(0, 0, 0,0.5) 1px 7px 15px;
+}
+
+.blk{
+    background-color: rgb(32, 32, 32);
+    color: white;
+}
+.blk:hover{
+}
+
+/* -----sections----------- */
+.subcontainer{
+    width: 100%;
+    min-height: 500px; 
+}
+.c1{
+    background-image: url(img/jumbo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.c2{
+    background-color: white;
+    margin-top: 100px;
+}
