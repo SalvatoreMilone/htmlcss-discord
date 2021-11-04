@@ -8,6 +8,7 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+    font-weight: 500;
 }
 
 header{
@@ -23,7 +24,7 @@ nav{
     text-align: center;
     height: 100%;
 }
-nav ul li a{
+a{
     color:white;
     text-decoration: none;
     margin: 0 10px;
@@ -79,9 +80,64 @@ nav ul{
     margin:0 50px;
     line-height: 28px;
 }
-
-.sectext h2{
+.sectexth2-1{
     margin-bottom: 40px;
+}
+.sectextlast{
+    text-align: center;
+}
+.sectextlastunder{
+    margin: auto;
+    width: 60%;
+    height: 100%;
+    padding-top: 15px;
+    text-align: center;
+    background-image: url(img/stars.svg);
+    background-position: center;
+    background-size:contain;
+}
+.lastbutton{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.subcontainerfoot1{
+    width: 80%;
+    display: inline-block;
+}
+.subcontainerfoot1 span{
+    margin: 20px 0;
+    font-size: 1.5vw;
+    display: inline-block;
+}
+.subcontainerfoot1 span img{
+    margin-right: 10px;
+}
+.subcontainerfoot1 li{
+    margin-top: 20px;
+    display: inline-block;
+}
+.subcontainerfoot1 h2{
+    margin: 0;
+}
+.container1foot{
+    display: inline-block;
+}
+.container2foot{
+    display: inline-block;
+    margin: 40px;
+}
+ul {
+    list-style-type: none;
+}
+.container2foot ul li{
+    margin-top: 10px;
+}
+hr{
+    border:1px solid rgb(47, 50, 88);
+}
+.bottomlogo{
+    margin-top: 30px;
 }
 /* -------------btn----------------- */
 
@@ -97,7 +153,7 @@ nav ul{
 }
 
 .btn:hover{
-    color: blue;
+    color: rgb(81, 151, 255);
     text-decoration: none;
     box-shadow: rgba(0, 0, 0,0.5) 1px 7px 15px;
 }
@@ -107,8 +163,60 @@ nav ul{
     color: white;
 }
 .blk:hover{
+    background-color: rgb(46, 46, 46);
+    color: rgb(111, 169, 255);
 }
 
+.btnlast{
+    background-color: #8EA1E1;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    margin: 0 20px;
+    transition: .5s;
+}
+
+.btnlast:hover{
+    color: rgb(34, 34, 34);
+    background-color: #6f8ae0;
+    text-decoration: none;
+    box-shadow: rgba(0, 0, 0,0.5) 1px 7px 15px;
+}
+
+.lastbuttonfooter{
+    display: inline-block;
+    margin-left: 550px;
+}
+.btnfoot{
+    background-color: #8EA1E1;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: .5s;
+}
+/* -----text --------------- */
+.text3{
+    font-size: 4vw;
+}
+.text2{
+    font-weight: 900;
+    font-size: calc(3vw - 10px);
+    margin-bottom:40px ;
+}
+.text1{
+    font-size: 1vw;
+}
+.texticon{
+    font-size: calc(2vw - 10px);
+}
+.foottext2{
+    color: #6f8ae0;
+}
+.footerlisttitle{
+    color: #6f8ae0;
+}
 /* -----sections----------- */
 .subcontainer{
     width: 100%;
@@ -118,9 +226,17 @@ nav ul{
     background-image: url(img/jumbo.png);
     background-size: cover;
     background-repeat: no-repeat;
+    color: white;
 }
 
 .c2{
     background-color: white;
     margin-top: 100px;
+}
+
+.c3{
+    background-color: #23272A;
+    padding: 100px 200px;
+    color: white;
+
 }
