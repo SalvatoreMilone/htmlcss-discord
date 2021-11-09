@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    list-style: none;
 }
 
 body{
@@ -20,9 +20,20 @@ header{
 
 nav{
     display: inline-block;
-    width: 100%;
     text-align: center;
+    width: 100%;
     height: 100%;
+    float: left;
+}
+
+.header::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.menu{
+    float: left;
+    width: calc(100% -  445px);
 }
 a{
     color:white;
@@ -42,13 +53,15 @@ nav ul{
 
 #logo{
     height: 100%;
-    margin-right: 10%;
+    margin-left: 5%;
     position: relative;
     top: 15%;
+    float: left;
 }
 
 #accedi{
-    margin-left: 10%;
+    margin-right: 5%;
+    float: right;
 }
 
 .latpadding{
@@ -77,9 +90,9 @@ nav ul{
 .sectext{
     width: 30%;
     display: inline-block;
-    margin:0 50px;
-    line-height: 28px;
+    margin:20px 50px;
 }
+
 .sectexth2-1{
     margin-bottom: 40px;
 }
@@ -101,43 +114,69 @@ nav ul{
     margin-top: 50px;
 }
 
-.subcontainerfoot1{
-    width: 80%;
+.imgbig{
+   margin-left: 50px;
+}
+
+.footbox{
+    width: 25%;
     display: inline-block;
+    float: left;
 }
-.subcontainerfoot1 span{
-    margin: 20px 0;
-    font-size: 1.5vw;
-    display: inline-block;
+.ita{
+    margin: 0 10px ;
 }
-.subcontainerfoot1 span img{
-    margin-right: 10px;
-}
-.subcontainerfoot1 li{
-    margin-top: 20px;
-    display: inline-block;
-}
-.subcontainerfoot1 h2{
-    margin: 0;
-}
-.container1foot{
-    display: inline-block;
-}
-.container2foot{
-    display: inline-block;
-    margin: 40px;
-}
-ul {
-    list-style-type: none;
-}
-.container2foot ul li{
+.footlist ul li{
     margin-top: 10px;
 }
-hr{
-    border:1px solid rgb(47, 50, 88);
+.footlist{
+    width: 15%;
+    display: inline-block;
+    float: left;
+    margin-left: 30px;
 }
-.bottomlogo{
+.bottomfooter{
+    display: block;
+}
+.row1footer{
+    display: block;
+}
+.row1footer::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.bottomfooter::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.bottomfooter{
     margin-top: 30px;
+    padding: 30px;
+    border-top: 1px solid #6f8ae0;
+}
+/* -----text --------------- */
+.text3{
+    font-size: 4vw;
+}
+.text2{
+    font-weight: 900;
+    font-size: calc(3vw - 10px);
+    margin-bottom:40px ;
+}
+.text1{
+    font-size: 1vw;
+}
+.texticon{
+    font-size: calc(2vw - 10px);
+}
+
+.footerlisttitle{
+    color: #6f8ae0;
+}
+.whitetext{
+    color: white;
 }
 /* -------------btn----------------- */
 
@@ -196,27 +235,6 @@ hr{
     text-decoration: none;
     transition: .5s;
 }
-/* -----text --------------- */
-.text3{
-    font-size: 4vw;
-}
-.text2{
-    font-weight: 900;
-    font-size: calc(3vw - 10px);
-    margin-bottom:40px ;
-}
-.text1{
-    font-size: 1vw;
-}
-.texticon{
-    font-size: calc(2vw - 10px);
-}
-.foottext2{
-    color: #6f8ae0;
-}
-.footerlisttitle{
-    color: #6f8ae0;
-}
 /* -----sections----------- */
 .subcontainer{
     width: 100%;
@@ -237,6 +255,11 @@ hr{
 .c3{
     background-color: #23272A;
     padding: 100px 200px;
-    color: white;
+}
 
+.left{
+    float: left;
+}
+.right{
+    float: right;
 }
